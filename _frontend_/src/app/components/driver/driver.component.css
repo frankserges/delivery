@@ -1,0 +1,91 @@
+.item1 {
+  grid-area: 1 / 1 / span 3 / span 4;
+  justify-content: center;}
+.item2 { grid-area: 3 / 1 /span 2 / span 2; }
+.item3 { grid-area: 5 / 1 /span 3 / span 2; }
+.map { grid-area: 3 / 3 /span 3 / span 3; }
+.buttonP { grid-area: 3 / 6 /span 2 / span 1; }
+.buttonIn {grid-area: 4 / 6 /span 2 / span 1;}
+.buttonDe { grid-area: 5 / 6 /span 1 / span 1;}
+.buttonFa { grid-area: 6 / 6 /span 4 / span 1;}
+
+.grid-container .item1 input {
+  justify-content: center;
+  width: 80%;
+  height: 30px;
+  margin-bottom: 0px;
+}
+.grid-container .buttonP button {
+  justify-content: center;
+  height: 56px;
+  background-color:#6fa8dc ;
+  border-radius: 8px;
+  width: 60%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+.grid-container .buttonIn button {
+  justify-content: center;
+  height: 56px;
+  background-color:#ff9900 ;
+  border-radius: 8px;
+  width: 60%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+.grid-container .buttonDe button {
+  justify-content: center;
+  height: 56px;
+  background-color:#6aa84f ;
+  border-radius: 8px;
+  width: 60%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.grid-container .buttonFa button {
+  justify-content: center;
+  height: 56px;
+  background-color:#e06666 ;
+  border-radius: 8px;
+  width: 60%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.grid-container .item1 button {
+  justify-content: center;
+  margin-left: 5px;
+  height: 36px;
+  width: 10%;
+  background-color:#93c47d;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+.grid-container .item2 text {
+  justify-content: start;
+
+
+}
+.grid-container .item3 text {
+  justify-content: start;
+
+
+}
+.grid-container .item1 button {
+  justify-content: center;
+}
+.grid-container {
+  display: grid;
+  /* grid-template-columns: auto auto auto auto; */
+  background-color: #fce5cd;
+  height: 1200px;
+  padding: 10px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0;
+
+}
+
+#map{
+  height:65vh;
+  /* width: 70vh; */
+}

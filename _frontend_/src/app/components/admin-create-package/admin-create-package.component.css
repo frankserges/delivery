@@ -1,0 +1,74 @@
+.grid-container {
+  display: grid;
+  /* grid-auto-rows:100% ; */
+  padding: 10px;
+  height: 950px;
+  background-color: #d9ead3;
+}
+.item1 {
+  grid-area: 1 / 1 / span 4 / span 4;
+  justify-content: center;}
+.item2 { grid-area: 2 / 3 /span 1 / span 1; }
+
+.grid-container .item1 #description  {
+  width: 20%;
+  height: 30px;
+}
+.grid-container .item1 #height  {
+  width: 20%;
+  height: 30px;
+}
+.grid-container .item1 #weight  {
+  width: 20%;
+  height: 30px;
+}
+.grid-container .item1 #width   {
+  width: 20%;
+  height: 30px;
+}
+.grid-container .item1 #depth   {
+  width: 20%;
+  height: 30px;
+}
+.grid-container .item1 #from_name   {
+  width: 20%;
+  height: 30px;
+}
+.grid-container .item1 #from_location   {
+  width: 20%;
+  height: 30px;
+}
+.grid-container .item1 #to_location   {
+  width: 20%;
+  height: 30px;
+}
+.grid-container .item1 #from_address  {
+  width: 20%;
+  height: 30px;
+}
+.grid-container .item1 #to_name  {
+  width: 20%;
+  height: 30px;
+}
+.grid-container .item1 #to_address  {
+  width: 20%;
+  height: 30px;
+}
+.grid-container .item1 form button {
+  justify-content: center;
+  height: 56px;
+  background-color:#6aa84f ;
+  border-radius: 8px;
+  width: 20%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  margin-right: 0px;
+}
+.grid-container .item2 button  {
+  justify-content: center;
+  height: 56px;
+  background-color:#6aa84f ;
+  border-radius: 8px;
+  width: 40%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  margin-right: 0px;
+}

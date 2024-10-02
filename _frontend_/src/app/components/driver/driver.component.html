@@ -1,0 +1,81 @@
+<div class="grid-container">
+  <div class="item1">
+
+    <input class="input" type="text" placeholder="Enter Delivery ID" [(ngModel)]="inputIdData">
+    <button  class="button" (click)="searchItem()">Track</button>
+
+  </div>
+  <div class="item2">
+    <h2 class="text">Package details</h2>
+
+        <div class="content" *ngIf="_package_">
+          <div class="description">
+             {{ _package_.description }}
+          </div>
+        </div>
+
+        <div class="content" *ngIf="_package_">
+          <div class="weight">
+             {{ _package_.weight }}
+          </div>
+        </div>
+
+        <div class="content" *ngIf="_package_">
+          <div class="width">
+             {{ _package_.width }}
+          </div>
+        </div>
+
+  </div>
+  <div class="item3">
+    <h2 class="text">Delivery details</h2>
+    <div class="content" *ngIf="_delivery_">
+      <div class="pickup_time">
+        {{ _delivery_.pickup_time }}
+      </div>
+    </div>
+
+    <div class="content" *ngIf="_delivery_">
+      <div class="start_time">
+        {{ _delivery_.start_time }}
+      </div>
+    </div>
+    <div class="content" *ngIf="_delivery_">
+      <div class="end_time">
+        {{ _delivery_.end_time }}
+      </div>
+    </div>
+
+    <div class="content" *ngIf="_delivery_">
+      <div class="status" >
+        {{ _delivery_.status }}
+      </div>
+    </div>
+  </div>
+  <div class="map">
+    <div class="map-container" >
+      <!-- <div class="map-frame"> -->
+       <!-- <app-map></app-map> -->
+        <div id="map"></div>
+      <!-- </div> -->
+
+    </div>
+  </div>
+  <div class="buttonP">
+    <button  class="button" (click)="pickedUp()" [disabled]="pickedupBtnisDisabled" style="font-size: x-large;">Picked Up</button>
+
+  </div>
+  <div class="buttonIn">
+    <button  class="button" (click)="inTransit()" [disabled]="intransitBtnisDisabled" style=" font-size: x-large;">In-Transit</button>
+
+  </div>
+  <div class="buttonDe">
+    <button  class="button" (click)="delivered()" [disabled]="deliveredBtnisDisabled" style=" font-size: x-large;">Delivered</button>
+
+  </div>
+  <div class="buttonFa">
+    <button  class="button" (click)="failed()" [disabled]="failedBtnisDisabled" style=" font-size: x-large;">Failed</button>
+
+  </div>
+
+</div>

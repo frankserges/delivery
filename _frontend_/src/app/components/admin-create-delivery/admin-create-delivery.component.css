@@ -1,0 +1,75 @@
+.grid-container {
+  display: grid;
+  /* grid-auto-rows:100% ; */
+  padding: 10px;
+  height: 700px;
+  background-color: #d9ead3;
+  /* width: 900px; */
+}
+.grid-container .item1 #pickup_time {
+  width: 20%;
+  height: 30px;
+}
+.grid-container .item1 #lab1 {
+  font-size: larger;
+}
+.grid-container .item1 #lab2 {
+  font-size: larger;
+}
+.grid-container .item1 #lab3 {
+  font-size: larger;
+
+}
+.grid-container .item1 #lab4 {
+  font-size: larger;
+}
+.grid-container .item1 #lab5 {
+  font-size: larger;
+}
+.grid-container .item1 #start_time {
+  width: 20%;
+  height: 30px;
+}
+.grid-container .item1 #end_time {
+  width: 20%;
+  height: 30px;
+}
+.grid-container .item1 #status {
+  width: 20%;
+  height: 30px;
+}
+
+.grid-container .item1 #dropDown {
+  width: 20%;
+  height: 30px;
+  margin-top: 10px;
+}
+.grid-container .item1 #bt1 {
+  width: 20%;
+  height: 30px;
+  margin-left: 220px;
+  margin-top: 20%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  justify-content: center;
+  height: 56px;
+  border-radius: 8px;
+  background-color:#6aa84f ;
+}
+.dd-style{
+  width: 100%;
+  font-size: larger;
+}
+.item1 {
+  grid-area: 1 / 1 / span 4 / span 4;
+  justify-content: center;}
+.item2 { grid-area: 3 / 2 /span 2 / span 5; }
+.grid-container .item2 button {
+  justify-content: center;
+  height: 56px;
+  background-color:#6aa84f ;
+  border-radius: 8px;
+  width: 20%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  margin-right: 0px;
+  margin-top: 30px;
+}

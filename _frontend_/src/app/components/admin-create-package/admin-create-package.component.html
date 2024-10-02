@@ -1,0 +1,61 @@
+<div class="grid-container">
+  <div class="item1">
+    <h2>Package Form</h2>
+    <form #packageForm="ngForm" (ngSubmit)="submitForm(packageForm)">
+      <div >
+        <label for="description" >description :</label><br>
+        <input type="text" id="description" name="description" [(ngModel)]="package.description" required><br>
+      </div>
+      <div>
+        <label for="weight">weight :</label><br>
+        <input type="number" id="weight" name="weight" step="0.01" min="0" [(ngModel)]="package.weight"  required><br><br>
+      </div>
+      <div>
+        <label for="width">width :</label><br>
+        <input type="number" id="width" name="width" step="0.01" min="0" [(ngModel)]="package.width" required ><br>
+      </div>
+      <div>
+        <label for="height">height :</label><br>
+        <input type="number" id="height" name="height" step="0.01"  min="0" [(ngModel)]="package.height" required><br><br>
+      </div>
+      <div>
+        <label for="depth">depth:</label><br>
+        <input type="number" id="depth" name="depth" step="0.01" min="0" [(ngModel)]="package.depth" required><br>
+      </div>
+      <div>
+        <label for="from_name">from_name :</label><br>
+        <input type="text" id="from_name" name="from_name" [(ngModel)]="package.from_name" required><br>
+      </div>
+      <div>
+        <label for="from_address">from_address:</label><br>
+        <input type="text" id="from_address" name="from_address" [(ngModel)]="package.from_address" required><br><br>
+      </div>
+      <div>
+        <label for="from_location">from_location :</label><br>
+         <input type="text" id="from_location" name="from_location" [(ngModel)]="package.from_location"  ><br><br>
+      </div>
+      <div>
+        <label for="to_name">to_name :</label><br>
+        <input type="text" id="to_name" name="to_name" [(ngModel)]="package.to_name" required><br><br>
+      </div>
+      <div>
+        <label for="to_address">to_address :</label><br>
+        <input type="text" id="to_address" name="to_address" [(ngModel)]="package.to_address" required><br><br>
+      </div>
+      <div>
+         <label for="to_location">to_location :</label><br>
+         <input type="text" id="to_location" name="to_location" [(ngModel)]="package.to_location" ><br><br>
+      </div>
+      <div>
+        <button  class="button" type="submit">Create Package</button>
+      </div>
+
+
+    </form>
+  </div>
+  <!-- <div class="item2">
+    <button  class="button" type="submit">Create Package</button>
+  </div> -->
+
+</div>
+

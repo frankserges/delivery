@@ -1,0 +1,46 @@
+<div class="grid-container">
+  <div class="item1">
+    <h2>Delivery Form</h2>
+    <form #deliveryForm="ngForm" (ngSubmit)="submitDelForm(deliveryForm)">
+      <div>
+        <label for="pickup_time" id="lab1">pickup_time :</label><br>
+        <input type="date" id="pickup_time" name="pickup_time" [(ngModel)]="delivery.pickup_time" required><br>
+      </div>
+      <div>
+        <label for="start_time" id="lab2">start_time :</label><br>
+        <input type="date" id="start_time" name="start_time" [(ngModel)]="delivery.start_time" required><br><br>
+      </div>
+      <div>
+        <label for="end_time" id="lab3">end_time :</label><br>
+        <input type="date" id="end_time" name="end_time"  [(ngModel)]="delivery.end_time" required ><br>
+      </div>
+      <!-- <div>
+        <label for="location" id="lab4">location :</label><br>
+        <input type="text" id="location" name="location"  [(ngModel)]="delivery.location" required><br><br>
+      </div> -->
+      <div>
+        <label for="status" id="lab5">status:</label><br>
+        <input type="text" id="status" name="status"  [(ngModel)]="delivery.status" required><br>
+      </div>
+       <div id="dropDown">
+
+        <form [formGroup]="formGroup">
+          <p-dropdown
+          formControlName="selectedPackage"
+          [options]="packages"
+          optionLabel="description"
+          placeholder="Select a Package"  [style]="{'width':'100%' , 'font-size': '23px'}"/>
+        </form>
+
+       </div>
+       <div>
+        <button  class="button" id="bt1" type="submit">Create Delivery</button>
+      </div>
+    </form>
+  </div>
+  <div class="item2">
+      <!-- <button  class="button" type="submit" >Create Delivery</button> -->
+  </div>
+
+</div>
+

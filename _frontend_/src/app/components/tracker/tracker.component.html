@@ -1,0 +1,61 @@
+<div class="grid-container">
+  <div class="item1">
+
+    <input class="input" type="text" placeholder="Enter Package ID" [(ngModel)]="inputData" >
+    <button  class="button" (click)="search()">Track</button>
+
+  </div>
+  <div class="item2">
+    <h2 class="text">Package details</h2>
+
+        <div class="content" *ngIf="_package_">
+          <div class="description">
+            {{ _package_.description }}
+          </div>
+        </div>
+
+        <div class="content" *ngIf="_package_">
+          <div class="weight">
+            {{ _package_.weight }}
+          </div>
+        </div>
+
+        <div class="content" *ngIf="_package_">
+          <div class="width">
+            {{ _package_.width }}
+          </div>
+        </div>
+
+
+  </div>
+  <div class="item3">
+    <h2 class="text">Delivery details</h2>
+    <div class="content" *ngIf="_delivery_">
+      <div class="pickup_time">
+        {{ _delivery_.pickup_time }}
+      </div>
+    </div>
+
+    <div class="content" *ngIf="_delivery_">
+      <div class="start_time">
+        {{ _delivery_.start_time }}
+      </div>
+    </div>
+
+    <div class="content" *ngIf="_delivery_">
+      <div class="status">
+        {{ _delivery_.status }}
+      </div>
+    </div>
+  </div>
+  <div class="map">
+    <div class="map-container" >
+      <!-- <div class="map-frame"> -->
+       <!-- <app-map></app-map> -->
+        <div id="map"></div>
+      <!-- </div> -->
+
+    </div>
+  </div>
+
+</div>
